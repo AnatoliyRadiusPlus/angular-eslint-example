@@ -32,10 +32,23 @@ module.exports = tseslint.config(
       "**/*.pipe.ts",
       "**/*.module.ts",
     ],
+    name: "max-lines-warn",
     rules: {
+      "max-lines-per-function": [
+        "warn", 
+        { 
+          max: 100, 
+          skipBlankLines: true, 
+          skipComments: true 
+        }
+      ],
       "max-lines": [
-        "warn",
-        { max: 500, skipBlankLines: true, skipComments: true },
+        "warn", 
+        { 
+          max: 500, 
+          skipBlankLines: true, 
+          skipComments: true 
+        }
       ],
     },
   },
@@ -43,7 +56,7 @@ module.exports = tseslint.config(
     files: ["**/*.component.ts", "**/*.service.ts"],
     rules: {
       "@typescript-eslint/member-ordering": [
-        "warn",
+        "error",
         {
           default: [
             "signature",
