@@ -31,7 +31,7 @@ module.exports = tseslint.config(
           }
         }
       ],
-      "complexity": ["warn", 13]
+      "complexity": ["warn", 10]
     },
   },
   {
