@@ -8,7 +8,7 @@ import { RouterOutlet } from '@angular/router';
     styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'angular-eslitn-test';
+  public title = 'angular-eslitn-test';
 
   public abc = 'abc';
   public def = 'def';
@@ -19,7 +19,7 @@ export class AppComponent {
   constructor() {
     console.log('AppComponent initialized');
     console.log(`Values: ${this.abc}, ${this.def}, ${this.ghi}, ${this.mno}, ${this.jkl}`);
-    
+
     this.publicMethod();
     this.protectedMethod();
     this.privateMethod();
